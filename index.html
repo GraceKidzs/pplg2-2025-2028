@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#7f1d1d">
+<meta name="description" content="Website kelas PPLG 2 angkatan 2025/2028">
+<title>PPLG 2 — Kelas 2025/2028</title>
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="toast" class="toast" role="status"></div>
+<header class="topbar">
+  <a class="brand" href="#home" data-route="home"><span class="brand-mark">P2</span><span>PPLG 2</span></a>
+  <button id="menuBtn" class="menu-btn" aria-label="Buka menu" aria-expanded="false"><i></i><i></i><i></i></button>
+</header>
+
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <div class="drawer-head"><div><small>NAVIGASI KELAS</small><strong>PPLG 2</strong></div><button id="closeMenu" class="icon-btn" aria-label="Tutup menu">×</button></div>
+  <nav class="nav">
+    <a href="#home" data-route="home">⌂ <span>Beranda</span></a>
+    <a href="#siswa" data-route="siswa">👥 <span>Data Siswa</span></a>
+    <a href="#foto" data-route="foto">📸 <span>Foto Murid</span></a>
+    <a href="#album" data-route="album">🖼️ <span>Album</span></a>
+    <a href="#game" data-route="game">🎮 <span>Game</span></a>
+    <a href="#tiktok" data-route="tiktok">♪ <span>Tiktok</span></a>
+    <a href="#instagram" data-route="instagram">◎ <span>Instagram</span></a>
+    <a href="#pembuat" data-route="pembuat">✦ <span>Pembuat</span></a>
+    <a href="#pengaturan" data-route="pengaturan">⚙ <span>Pengaturan</span></a>
+  </nav>
+  <div class="drawer-foot">PPLG • 2025/2028</div>
+</aside>
+<div id="backdrop" class="backdrop"></div>
+
+<main id="app">
+<section id="home" class="page active">
+  <div class="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-copy">
+      <p class="eyebrow">WELCOME TO OUR CLASS</p>
+      <h1>PPLG <span>2</span></h1>
+      <p class="hero-sub">Tempat cerita, karya, permainan, dan kenangan satu kelas.</p>
+      <div class="hero-actions"><a class="btn primary" href="#foto">Lihat Murid</a><a class="btn ghost" href="#game">Main Game</a></div>
+      <div class="ticker"><span>✦</span> Angkatan 2025/2028 • SMK • PPLG 2 <span>✦</span> Keep learning, keep creating.</div>
+    </div>
+    <div class="hero-card">
+      <div class="orbit o1"></div><div class="orbit o2"></div>
+      <div class="card-inner"><span class="mini-label">CLASS</span><b>PPLG<br><em>02</em></b><small>CODE • CREATE • CONNECT</small></div>
+    </div>
+  </div>
+  <div class="section-head"><div><span class="eyebrow">RINGKASAN</span><h2>Satu kelas, banyak cerita.</h2></div><p>Gunakan menu ☰ untuk menjelajah seluruh isi website.</p></div>
+  <div class="stats-grid">
+    <div class="stat"><span>01</span><b>32</b><small>Murid</small></div>
+    <div class="stat"><span>02</span><b>6</b><small>Kategori TTS</small></div>
+    <div class="stat"><span>03</span><b>60s</b><small>Game Piala</small></div>
+    <div class="stat"><span>04</span><b>∞</b><small>Kenangan</small></div>
+  </div>
+  <div class="feature-grid">
+    <article class="feature"><span class="feature-icon">📸</span><h3>Kenalan dengan kelas</h3><p>Lihat lima profil murid yang sudah dimasukkan. Menambah foto berikutnya cukup edit satu daftar kecil di JavaScript.</p><a href="#foto">Buka galeri →</a></article>
+    <article class="feature"><span class="feature-icon">🧩</span><h3>Asah kemampuan</h3><p>Tersedia 1.250 soal dalam 6 kategori. Setiap permainan hanya mendapat 25 soal yang diacak, plus game tangkap piala.</p><a href="#game">Mulai bermain →</a></article>
+    <article class="feature"><span class="feature-icon">🍗</span><h3>Support karya teman</h3><p>Lihat promosi dagangan murid dan hubungi nomor yang tertera untuk order.</p><a href="#foto">Lihat promosi murid →</a></article>
+  </div>
+</section>
+
+<section id="siswa" class="page">
+  <div class="section-head"><div><span class="eyebrow">01 • DATA KELAS</span><h2>Data Siswa</h2></div><p>Jumlah siswa PPLG 2 yang ditampilkan sesuai data yang diberikan.</p></div>
+  <div class="student-total"><div><span>Total siswa</span><strong>32</strong><small>murid</small></div><div class="bar-wrap"><div class="bar-label"><span>Laki-laki <b>22</b></span><span>Perempuan <b>10</b></span></div><div class="bar"><i style="width:68.75%"></i></div></div></div>
+  <div class="gender-grid"><div class="gender-card male"><span>♂</span><div><b>22 orang</b><small>Laki-Laki</small></div></div><div class="gender-card female"><span>♀</span><div><b>10 orang</b><small>Perempuan</small></div></div></div>
+</section>
+
+<section id="foto" class="page">
+  <div class="section-head"><div><span class="eyebrow">02 • GALERI</span><h2>Foto Murid</h2></div><p>Profil Murid PPLG 2.</p></div>
+  <div id="studentGallery" class="gallery-grid"></div>
+</section>
+
+<section id="album" class="page">
+  <div class="section-head"><div><span class="eyebrow">03 • KENANGAN</span><h2>Album</h2></div><p>Kumpulan momen kebersamaan PPLG 2.</p></div>
+  <div id="albumGrid" class="album-grid"></div>
+  <div id="albumDetail" class="album-detail hidden"></div>
+</section>
+
+<section id="game" class="page">
+  <div class="section-head"><div><span class="eyebrow">04 • PLAYGROUND</span><h2>Game Kelas</h2></div><p>Pilih permainan, lalu tantang diri sendiri.</p></div>
+  <div id="gameChooser" class="game-grid">
+    <button class="game-card" data-game="tts"><span>🧩</span><div><small>GAME 01</small><h3>Teka-Teki Silang</h3><p>1.250 soal • 6 kategori • 25 soal per permainan. Pilih bidang yang kamu kuasai.</p></div><b>→</b></button>
+    <button class="game-card" data-game="trophy"><span>🏆</span><div><small>GAME 02</small><h3>Tangkap Piala</h3><p>Tangkap piala sebanyak-banyaknya dalam 60 detik.</p></div><b>→</b></button>
+  </div>
+
+  <div id="ttsMenu" class="game-panel hidden">
+    <button class="back-game" data-back="chooser">← Kembali</button>
+    <div class="game-title"><span>🧩</span><div><small>TEKA-TEKI SILANG</small><h3>Pilih kategori soal</h3></div></div>
+    <div id="categoryGrid" class="category-grid"></div>
+  </div>
+
+  <div id="ttsGame" class="game-panel hidden">
+    <button class="back-game" data-back="categories">← Pilih kategori</button>
+    <div class="tts-head"><div><small id="ttsCategoryLabel"></small><h3 id="ttsTitle">Teka-Teki Silang</h3></div><button id="checkTts" class="btn primary">Periksa Jawaban</button></div>
+    <div class="tts-layout"><div id="crossword" class="crossword" aria-label="Papan teka-teki silang"></div><div class="clues"><h4>Mendatar / Menurun</h4><div id="clueList"></div></div></div>
+    <div class="tts-status"><span id="ttsScore">0 / 25 benar</span><span id="ttsMessage"></span></div>
+  </div>
+
+  <div id="trophyGame" class="game-panel hidden">
+    <button class="back-game" data-back="chooser">← Kembali</button>
+    <div class="trophy-head"><div><small>GAME 02</small><h3>🏆 Tangkap Piala</h3><p>Tangkap piala yang muncul secara acak sebelum waktu habis.</p></div><div class="timer-box"><span>WAKTU</span><b id="timeLeft">60</b><small>detik</small></div></div>
+    <div class="score-row"><span>Skor <b id="trophyScore">0</b></span><button id="startTrophy" class="btn primary">Mulai / Main Ulang</button></div>
+    <div id="trophyField" class="trophy-field"><div class="trophy-intro">Tekan <b>Mulai / Main Ulang</b><br>untuk memulai.</div><button id="trophy" class="trophy" aria-label="Tangkap piala">🏆</button></div>
+    <p class="muted center">Tips: piala berpindah tempat setiap kali disentuh. Skor akan kembali 0 saat bermain ulang.</p>
+  </div>
+</section>
+
+<section id="tiktok" class="page">
+  <div class="social-card">
+    <div class="social-art">♪</div><div><span class="eyebrow">05 • SOCIAL</span><h2>Tiktok PPLG 2</h2><p>Yuk follow akun Tiktok kelas PPLG 2 untuk melihat video, momen seru, dan kegiatan kelas.</p><a class="btn primary" target="_blank" rel="noopener" href="https://www.tiktok.com/@xl.pplg2forza?is_from_webapp=1&sender_device=pc">Follow Tiktok →</a></div>
+  </div>
+</section>
+
+<section id="instagram" class="page">
+  <div class="social-card">
+    <div class="social-art">◎</div><div><span class="eyebrow">06 • SOCIAL</span><h2>Instagram PPLG 2</h2><p>Yuk ikuti akun Instagram kelas PPLG 2 untuk melihat update, momen, dan kegiatan kelas.</p><a class="btn primary" target="_blank" rel="noopener" href="https://www.instagram.com/xl.erpeeltwo____/?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==">Ikuti Instagram →</a></div>
+  </div>
+</section>
+
+<section id="promo-detail" class="page">
+  <div id="promoDetail"></div>
+</section>
+
+<section id="pembuat" class="page">
+  <div class="creator-card"><div class="creator-mark">GK</div><div><span class="eyebrow">08 • CREATOR</span><h2>GraceKidzs</h2><p>GraceKidzs adalah pembuat website kelas PPLG 2 angkatan 2025/2028. Ia membuat website ini bertujuan agar bisa bermanfaat untuk kelas PPLG 2 dan dapat menghibur teman-teman yang mengunjungi website ini. Mungkin dari beberapa tampilan UI dan beberapa fitur yang lain masih terdapat kekurangan, tetapi berharap website ini bisa bermanfaat. Terimakasih.</p></div></div>
+</section>
+
+<section id="pengaturan" class="page">
+  <div class="section-head"><div><span class="eyebrow">08 • PERSONALISASI</span><h2>Pengaturan</h2></div><p>Atur tampilan website sesuai kenyamananmu.</p></div>
+  <div class="settings-list">
+    <label class="setting"><div><b>Mode gelap</b><small>Lebih nyaman untuk penggunaan malam.</small></div><input id="darkMode" type="checkbox"><span class="switch"></span></label>
+    <label class="setting"><div><b>Kurangi animasi</b><small>Mematikan gerakan besar dan transisi.</small></div><input id="reduceMotion" type="checkbox"><span class="switch"></span></label>
+    <label class="setting"><div><b>Ukuran teks</b><small>Sesuaikan keterbacaan halaman.</small></div><select id="fontSize"><option value="normal">Normal</option><option value="large">Besar</option><option value="xl">Sangat besar</option></select></label>
+    <div class="setting"><div><b>Reset pengaturan</b><small>Kembalikan semua preferensi ke awal.</small></div><button id="resetSettings" class="btn ghost">Reset</button></div>
+  </div>
+</main>
+<footer>© PPLG 2 • Angkatan 2025/2028 • Dibuat untuk menyimpan cerita kelas.</footer>
+<script src="script.js"></script>
+</body>
+</html>
